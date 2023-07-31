@@ -1,9 +1,11 @@
 <template>
     <div class="grid">
       <div v-for="item in filteredItems" :key="item.id" class="grid-item">
-        <div class="grid-circle" :style="{ backgroundColor: item.color }">
+        <div v-if="item.shape === 'oval' || item.shape === 'round'" class="grid-circle" :style="{ backgroundColor: item.color }">
           
         </div>
+        <div v-else-if="item.shape === 'square'" class="grid-box" :style="{ backgroundColor: item.color }"></div>
+        <div v-else="item.shape === 'rectangle'" class="grid-box2" :style="{ backgroundColor: item.color }"></div>
       </div>
     </div>
   </template>

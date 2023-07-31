@@ -28,6 +28,16 @@
       "id": 6,
       "shape": "round",
       "color": "grey"
+    },
+    {
+      "id": 7,
+      "shape": "rectangle",
+      "color": "teal"
+    },
+    {
+      "id": 8,
+      "shape": "rectangle",
+      "color": "yellow"
     }
   ]
   
