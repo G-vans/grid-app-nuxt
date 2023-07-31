@@ -1,63 +1,111 @@
-# Nuxt 3 Minimal Starter
+# Grid App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+The Grid App is a responsive web application built with Nuxt.js that allows users to filter and view items based on their shapes and colors. It includes an authentication system and features a grid display with various shapes and colors that users can filter through.
 
-## Setup
+## Table of Contents
 
-Make sure to install the dependencies:
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+  - [Authentication](#authentication)
+  - [Filtering Items](#filtering-items)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+### Prerequisites
+
+To run this project, you need to have the following installed on your local machine:
+
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository to your local machine:
 
 ```bash
-# npm
+git clone https://github.com/G-vans/grid-app-nuxt.git
+```
+
+2. Change into the project directory:
+
+```bash
+cd grid-app-nuxt
+```
+
+3. Install the required dependencies:
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
 ```
 
-## Development Server
+## Usage
 
-Start the development server on `http://localhost:3000`:
+### Authentication
 
-```bash
-# npm
-npm run dev
+The Grid App uses a hardcoded authentication system. The login credentials are provided within the application. To access the app, use the following login credentials:
 
-# pnpm
-pnpm run dev
+Username: `demo`
+Password: `qwerty123`
 
-# yarn
-yarn dev
+### Filtering Items
+
+Once logged in, the user can view the items displayed in a grid format. The items can be filtered based on their shapes and colors. The filtering options are available in the Filters component, where the user can select and deselect the desired shapes and colors. The grid will automatically update and display items that match the selected filters.
+
+## Project Structure
+
+The project follows a standard Nuxt.js structure. The main directories and files are organized as follows:
+
+```
+grid-app/
+|-- assets/
+|   |-- main.scss
+|
+|-- components/
+|   |-- Grid.vue
+|   |-- Filters.vue
+|
+|-- data/
+|   |-- items.json
+|
+|-- pages/
+|   |-- index.vue
+|
+|-- tests/
+|   |-- Grid.spec.js
+|
+|-- nuxt.config.js
+|-- package.json
+|-- README.md
 ```
 
-## Production
+- `assets`: Contains the main SCSS file for styling the application.
+- `components`: Contains Vue components used in the application, such as Grid and Filters.
+- `data`: Contains the JSON file (`items.json`) with data for the items.
+- `pages`: Contains the main page component (`index.vue`) that renders the Grid and Filters components.
+- `tests`: Contains test files (e.g., `Grid.spec.js`) for testing components and functionalities.
+- `nuxt.config.js`: Nuxt.js configuration file.
+- `package.json`: Contains project dependencies and scripts.
+- `README.md`: This file, providing an overview of the project and instructions for running and using the application.
 
-Build the application for production:
+## Technologies Used
 
-```bash
-# npm
-npm run build
+- Nuxt.js
+- Vue.js
+- SCSS
+- Jest (for testing)
 
-# pnpm
-pnpm run build
+## Contributing
 
-# yarn
-yarn build
-```
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create a pull request.
 
-Locally preview production build:
+## License
 
-```bash
-# npm
-npm run preview
+This project is licensed under the [MIT License](LICENSE).
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
