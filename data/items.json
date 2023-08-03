@@ -32,12 +32,22 @@
     {
       "id": 7,
       "shape": "rectangle",
-      "color": "teal"
+      "color": "blue"
     },
     {
       "id": 8,
       "shape": "rectangle",
       "color": "yellow"
+    },
+    {
+      "id": 9,
+      "shape": "rectangle",
+      "color": "red"
+    },
+    {
+      "id": 10,
+      "shape": "rectangle",
+      "color": "purple"
     }
   ]
   

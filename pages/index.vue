@@ -34,7 +34,7 @@
       return {
         authenticated: false, 
         items: itemsData,
-        shapes: ["oval", "square", "round", "triangle", "rectangle"],
+        shapes: ["oval", "square", "round", "rectangle"],
         colors: ["red", "blue", "green", "yellow", "purple", "grey"],
         activeFilters: {
           shapes: ["oval"],
